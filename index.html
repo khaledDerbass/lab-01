@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled Derbass (Lab-01)</title>
+
+    <style>
+        .lists{
+            background-color: royalblue;
+        }
+        
+        h1
+        {text-align: center; color: royalblue;}
+        footer{
+        display: block; text-align: center;  }
+        div#navbar
+        { margin-left: 5%;
+        margin-bottom: 10%;
+        border-left: hidden; border-right: hidden;
+        position:relative; width: 100%;
+        }
+        div#navbar ul {list-style-type: none;}
+        div#navbar ul li
+        {
+        border-top: hidden;
+        border-bottom: hidden;
+        margin-right: 2em; width: 25%; float: left;  margin-left: 5.5%;
+        }
+        div#navbar ul li a {text-decoration: none;
+        display: block; padding: 0.5em;}
+            
+    </style>
+</head>
+<body>
+  
+    <header>
+       
+
+    </header>
+
+    <main>
+        <h1>Class 1 Lab</h1>
+
+        <p style="Align=center; background-color:blue; color:black;">Enter your name, please!</p>
+        <p style="Align=center; background-color:aqua; color:rgb(182, 32, 124);">Enter your age, please!</p>
+        <p style="Align=center; background-color:black; color:white;">What\'s your Major?</p>
+        <p style="Align=center; background-color:rgb(109, 144, 238); color:dimgrey;">Enter the college name, please!</p>
+
+
+        <div id= "navbar">
+            <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="images/HTML.png" alt="HTML Course picture" width="30%"> </a></li>
+           
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">   <img src="images/CSS.png" alt="CSS Course picture" width="30%"></a></li>
+           
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="images/JS.png" alt="JS Course picture" width="30%"></a></li>
+           
+            </ul>
+            </div>
+
+            <br><br>
+     
+
+  <h3>Academies</h3>
+
+ <div id= "navbar">
+ <ul>
+ <li><a href="https://www.w3schools.com/"> <img src="images/w3.png" alt="W3Schools Academy picture" width="50%"> </a></li>
+  <br>
+<li> <a href="https://www.coursera.org/"><img src="images/c.png" alt="coursera Academy picture" width="50%"></a>    </li>  <br>
+<li><a href="https://www.udemy.com/"><img src="images/udemy.png" alt="W3Schools Academy picture" width="50%"></a></li>
+ <br>
+ </ul>
+ </div>
+
+
+  
+    </main>
+
+    <footer >
+        <img src="images/JS_.png" alt="HTML Course picture">
+        <br><br>
+        <strong>&copy; 2021ASAC Copyright Reserved</strong>
+    </footer>
+
+    <script>
+
+        let userName=prompt('Enter your name, pLease!');
+        console.log("UserName "+userName);
+
+        let age=prompt('Enter your age, pLease!');
+
+        console.log("Age "+age);
+
+        let major=prompt('What\'s your Major?');
+
+        console.log("Major "+major);
+
+        let collegeName=prompt('Enter the college name, pLease');
+
+        console.log("CollegeName "+collegeName);
+
+        alert('Welcome, '+ userName+ ' your age is '+ age + ' with Major '+ major+' in '+collegeName+' College ,Success is yours!');
+        
+       
+    </script>  
+</body>
+</html>
