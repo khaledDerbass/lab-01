@@ -12,12 +12,17 @@
         }
         
         h1
-        {text-align: center; color: royalblue;}
+        {text-align:center; color: royalblue;
+        position:relative; margin-right:5%; display:block;
+        margin-top: 10%;}
+
         footer{
         display: block; text-align: center;  }
+
         div#navbar
         { margin-left: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 3%;
+        
         border-left: hidden; border-right: hidden;
         position:relative; width: 100%;
         }
@@ -36,19 +41,6 @@
 <body>
   
     <header>
-       
-
-    </header>
-
-    <main>
-        <h1>Class 1 Lab</h1>
-
-        <p style="Align=center; background-color:blue; color:black;">Enter your name, please!</p>
-        <p style="Align=center; background-color:aqua; color:rgb(182, 32, 124);">Enter your age, please!</p>
-        <p style="Align=center; background-color:black; color:white;">What\'s your Major?</p>
-        <p style="Align=center; background-color:rgb(109, 144, 238); color:dimgrey;">Enter the college name, please!</p>
-
-
         <div id= "navbar">
             <ul>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="images/HTML.png" alt="HTML Course picture" width="30%"> </a></li>
@@ -56,9 +48,19 @@
             <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">   <img src="images/CSS.png" alt="CSS Course picture" width="30%"></a></li>
            
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="images/JS.png" alt="JS Course picture" width="30%"></a></li>
-           
             </ul>
-            </div>
+        </div>
+
+    </header>
+
+    <main>
+      <br> <br>
+        <h1>Class 1 Lab</h1>
+
+        <p style="Align=center; background-color:blue; color:black;">Enter your name, please!</p>
+        <p style="Align=center; background-color:aqua; color:rgb(182, 32, 124);">Enter your age, please!</p>
+        <p style="Align=center; background-color:black; color:white;">What\'s your Major?</p>
+        <p style="Align=center; background-color:rgb(109, 144, 238); color:dimgrey;">Enter the college name, please!</p>
 
             <br><br>
      
@@ -90,20 +92,24 @@
         let userName=prompt('Enter your name, pLease!');
         console.log("UserName "+userName);
 
+        alert("Welcome, "+userName);
+
         let age=prompt('Enter your age, pLease!');
 
         console.log("Age "+age);
 
+        alert("Your age is, "+age);
+
         let major=prompt('What\'s your Major?');
 
         console.log("Major "+major);
+        alert("Your major is, "+major);
 
         let collegeName=prompt('Enter the college name, pLease');
 
         console.log("CollegeName "+collegeName);
 
-        alert('Welcome, '+ userName+ ' your age is '+ age + ' with Major '+ major+' in '+collegeName+' College ,Success is yours!');
-        
+        alert("Finally, you studied in "+collegeName+" College, Success is yours!");        
        
     </script>  
 </body>
